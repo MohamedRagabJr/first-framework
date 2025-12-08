@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@plugin "daisyui";
+body{
+  background-color: #fff;
+}
+#root {
+  text-align: center;
+  width: 100%;
+}
+a{
+  color: #fff
+}
+.bg-main{
+  background-color: var(--main-color);
+}
+.bg-secondary{
+  background-color: var(--main-color2);
+}
+.head-title svg{
+  margin: auto;
+}
+.head-title h2:after,
+.head-title h2:before{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: -10px;
+  background-color: #fff;
+}
+.head-title h2:before{
+  inset-inline-end: 22%;
+}
+.head-title h2:after{
+  inset-inline-start: 22%;
+}
+/** Footer  **/
+.footer .icons svg{
+  border: 1px solid #fff;
+  padding: 9px;
+  font-size: 40px;
+  border-radius: 50%;
+}
+aside{
+  background-color: #1a252f;
+}
+.section-bg-white svg,
+.section-bg-white h2{
+    color: var(--main-color2);
+}
+.section-bg-white h2:before,.section-bg-white h2:after{
+  background-color: var(--main-color2);
+}
+/*******/
+.gallery-secion a{
+  position: relative
+}
+.gallery-secion a:before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: 
+        color-mix(in oklch, transparent, var(--main-color) 90%);
+        opacity: 0;
+        transition: 0.5s linear;
+}
+.gallery-secion a:hover::before{
+  opacity: 1;
+}
+.gallery-secion a svg{
+  position: absolute;
+    inset: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 70px;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.gallery-secion a:hover svg{
+  opacity: 1;
+}
+.active a{
+  background: var(--main-color);
+}
+.active a:hover{
+  color: var(--main-color2)
+}
