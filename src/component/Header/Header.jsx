@@ -1,16 +1,14 @@
-import { useLocation , Link } from 'react-router-dom'
+import { useLocation , Link, NavLink } from 'react-router-dom'
 
 export default function Header() {
   const links = [
     { href: "/About", label: "About" },
     { href: "/portfolio", label: "Portfolio" },
+    { href: "/Products", label: "Products" },
     { href: "/Contact", label: "Contact" },
   ];
 
   const location = useLocation();
-
-  // helper to normalize paths (handles trailing slash, case)
-  const normalize = (p) => p.replace(/\/+$/,'').toLowerCase() || '/';
 
   return (
     <header className='bg-secondary'>
@@ -22,10 +20,9 @@ export default function Header() {
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             {links.map((link, index) => {
-              const active = normalize(location.pathname) === normalize(link.href);
               return (
-                <li key={index} className={active ? 'active' : ''}>
-                  <Link to={link.href} className="text-white uppercase mx-[5px] text-lg font-bold">{link.label}</Link>
+                <li key={index}>
+                  <NavLink to={link.href} className="text-white uppercase mx-[5px] text-lg font-bold">{link.label}</NavLink>
                 </li>
               );
             })}

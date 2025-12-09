@@ -16,6 +16,12 @@ a{
 .bg-secondary{
   background-color: var(--main-color2);
 }
+.primary-color{
+  color: var(--main-color) !important;
+}
+.secondary-color{
+  color: var(--main-color2) !important;
+}
 .head-title svg{
   margin: auto;
 }
@@ -81,9 +87,12 @@ aside{
 .gallery-secion a:hover svg{
   opacity: 1;
 }
-.active a{
+a.active {
   background: var(--main-color);
 }
-.active a:hover{
+a.active:hover{
   color: var(--main-color2)
+}
+.btn-error{
+  background-color: red !important;
 }
