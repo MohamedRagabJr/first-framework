@@ -13,8 +13,8 @@ export default function About() {
     <div className="bg-main text-center py-10 px-[8%] py-[200px]">
       <Title titles={titles} />
       
-        {aboutStrucs.map((aboutStruc) => 
-        <div className="grid grid-cols-2 gap-4 mt-[30px]">
+        {aboutStrucs.map((aboutStruc , index) => 
+        <div className="grid grid-cols-2 gap-4 mt-[30px]" key={index}> 
           <p className="text-start font-semibold">{aboutStruc.desc}</p>
           <p className="text-start font-semibold">{aboutStruc.subdesc}</p>
         </div>

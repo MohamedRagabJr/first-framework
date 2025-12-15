@@ -27,7 +27,7 @@ export default function Portfolio() {
                 {images.map((image , index) => 
                 <a key={index} data-fancybox="gallery" href={image}>
                     <img src={image}  alt="Sample image #1 " className="rounded-lg" />
-                    <TiPlus />
+                    <TiPlus key={index}/>
                 </a>
                 )}
                 

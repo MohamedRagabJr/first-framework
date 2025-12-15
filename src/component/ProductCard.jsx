@@ -1,14 +1,14 @@
 export default function ProductCard({ product, del }) {
   return (
-    <div className="card bg-base-100 w-96 shadow-sm bg-white">
+    <div className="card bg-base-100 w-full shadow-sm bg-white">
       <figure>
-        <img src={product.img} alt={product.title} className="w-full h-auto" />
+        <img src={product.imageCover} alt={product.title} className="w-full h-[250px] object-contain" />
       </figure>
 
       <div className="card-body bg-white">
-        <h2 className="card-title primary-color">{product.title}</h2>
+        <h2 className="card-title primary-color truncate">{product.title}</h2>
 
-        <p className="secondary-color text-start">{product.desc}</p>
+        <p className="secondary-color text-start truncate ">{product.description}</p>
 
         <p className="bg-secondary w-max px-4 py-1 rounded-lg shadow-lg text-white">
           {product.price} L.E
