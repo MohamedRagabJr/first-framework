@@ -1,12 +1,12 @@
-import Title from "../Title";
-import PageTitle from "../PageTitle";
-import img1 from "../../assets/poert1.png";
+import Title from "../../component/Title";
+import PageTitle from "../../component/PageTitle";
+import img1 from "../../assets/port3.png";
 import img2 from "../../assets/port2.png";
 import img3 from "../../assets/port3.png";
-import img4 from "../../assets/poert1.png";
+import img4 from "../../assets/port3.png";
 import img5 from "../../assets/port2.png";
 import img6 from "../../assets/port3.png";
-import ProductCard from "../ProductCard";
+import ProductCard from "../../component/ProductCard";
 import { useState } from "react";
 
 export default function Products() {

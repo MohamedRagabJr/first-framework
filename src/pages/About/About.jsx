@@ -1,5 +1,5 @@
-import Title from "../Title";
-import PageTitle from "../PageTitle";
+import Title from "../../component/Title";
+import PageTitle from "../../component/PageTitle";
 export default function About() {
   const titles = [
     { head: "about component" },
@@ -14,7 +14,7 @@ export default function About() {
       <Title titles={titles} />
       
         {aboutStrucs.map((aboutStruc) => 
-        <div class="grid grid-cols-2 gap-4 mt-[30px]">
+        <div className="grid grid-cols-2 gap-4 mt-[30px]">
           <p className="text-start font-semibold">{aboutStruc.desc}</p>
           <p className="text-start font-semibold">{aboutStruc.subdesc}</p>
         </div>

@@ -1,11 +1,11 @@
-import Title from "../Title";
-import PageTitle from "../PageTitle";
+import Title from "../../component/Title";
+import PageTitle from "../../component/PageTitle";
 import { TiPlus } from "react-icons/ti";
 import useFancybox from '../../useFancybox';
-import img1 from "../../assets/poert1.png";
+import img1 from "../../assets/port3.png";
 import img2 from "../../assets/port2.png";
 import img3 from "../../assets/port3.png";
-import img4 from "../../assets/poert1.png";
+import img4 from "../../assets/port3.png";
 import img5 from "../../assets/port2.png";
 import img6 from "../../assets/port3.png";
 export default function Portfolio() {
@@ -23,7 +23,7 @@ export default function Portfolio() {
         <Title titles={titles} />
         
         <div ref={fancyboxRef}>
-            <div class="grid grid-cols-3 gap-10 mt-[30px]">
+            <div className="grid grid-cols-3 gap-10 mt-[30px]">
                 {images.map((image , index) => 
                 <a key={index} data-fancybox="gallery" href={image}>
                     <img src={image}  alt="Sample image #1 " className="rounded-lg" />

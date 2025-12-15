@@ -1,6 +1,6 @@
-import Title from "../Title";
+import Title from "../../component/Title";
 import avatar from "../../assets/avataaars.svg"; 
-import PageTitle from "../PageTitle";
+import PageTitle from "../../component/PageTitle";
 export default function Home() {
   const titles = [
     { head: "start Framework" },

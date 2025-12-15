@@ -54,6 +54,11 @@ aside{
 .section-bg-white h2{
     color: var(--main-color2);
 }
+.bg-main svg,
+.bg-main h2{
+    color: #fff;
+}
+
 .section-bg-white h2:before,.section-bg-white h2:after{
   background-color: var(--main-color2);
 }
@@ -95,4 +100,30 @@ a.active:hover{
 }
 .btn-error{
   background-color: red !important;
+}
+@media (max-width:991px ){
+  .flex-none{
+    display: none;
+  }
+  .menu.menu-sm{
+    inset-inline-end: 0;
+  }
+  .logo a{
+    font-size: 25px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .head-title h2:after, .head-title h2:before{
+    width: 50px;
+  }
+}
+@media (max-width: 767px){
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+  .card{
+    width: 100%;
+  }
 }

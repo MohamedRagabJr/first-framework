@@ -1,5 +1,5 @@
-import Title from "../Title";
-import PageTitle from "../PageTitle";
+import Title from "../../component/Title";
+import PageTitle from "../../component/PageTitle";
 export default function Contact() {
     const titles = [
     { head: "conatct section" },
