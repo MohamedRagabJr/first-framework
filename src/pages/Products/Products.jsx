@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import Title from "../../component/Title";
 import PageTitle from "../../component/PageTitle";
 import ProductCard from "../../component/ProductCard";
@@ -32,6 +33,7 @@ export default function Products() {
         <Title titles={titles} />
         <div className="grid grid-cols-3 gap-[20px] mt-[30px]">
           {products.map(product => (
+            
             <ProductCard
               key={product.id}
               product={product}
